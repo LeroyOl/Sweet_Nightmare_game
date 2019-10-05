@@ -1,0 +1,351 @@
+
+@font-face {
+	font-family: 'TheMacabre';
+	src: url('../font/TheMacabre.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AnotherDanger';
+	src: url('../font/AnotherDanger.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	font-family: TheMacabre;
+	color:#fff;
+	text-align: center;
+	font-size:40px;
+	max-width: 100vw;
+	max-height:100vh;
+	display:block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: url("../img/finger.cur"), auto;
+}
+
+h1{
+	grid-row: 15 / 40;
+	grid-column: 20 / 80;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 9vw;
+	letter-spacing: 0.07em;
+	color: #ffc70f;
+	animation:shadow 50s infinite;
+	
+}
+
+.bouton{
+	grid-row: 60 / 61;
+	grid-column: 30 / 70;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 4vw;
+	letter-spacing: 0.07em;
+	color: #ffc70f;
+	text-shadow: 7px 6px 5px black, 9px 2px 4px white;
+	transition: 1s;
+}
+
+.bouton :hover{
+	transform: scale(1.2);
+	transition: 1s;
+	color: #FFF;
+	text-shadow: 5px -2px 5px #ffc70f, 9px 2px 4px #020202;
+	animation:fear 0.2s linear infinite;
+}
+
+.divJeu{
+	grid-row: 16/99;
+	grid-column: 2/100;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width:100vw;
+}
+.game, .start, .loose, .win{
+	display: grid;
+	grid-template-columns: repeat(100, 1vw);
+	grid-template-rows: repeat(100, 1vh);
+	transition:0.8s;
+}
+.hud{
+	display:flex;
+	justify-content: space-between;
+	margin-right: 5vw;
+	margin-left: 5vw;
+	font-size:4vw;
+}
+.win{
+	font-size: 5em;
+	color: #ffc70f;
+	text-shadow: -4px 4px 5px black;
+	display: flex;
+	justify-content: center;
+	padding-top: 25vh;
+}
+.loose{
+	font-size: 5em;
+	color: #ffc70f;
+	text-shadow: -4px 4px 5px black;
+	display: flex;
+	justify-content: center;
+	padding-top: 25vh;
+}
+.difficult{
+	color: #ffc70f;
+	text-shadow: -4px 4px 5px black;
+}
+.score{
+	color: #ffc70f;
+	text-shadow: -4px 4px 5px black;
+}
+.timer{
+	color: #ffc70f;
+	text-shadow: -4px 4px 5px black;
+}
+.retour{
+	color: #ffc70f;
+	font-size: 3vw;
+	background-color: rgba(0,0,0,.5);
+	width: 7vw;
+	border-radius: 2vw;
+	margin-left: 35px;
+	padding-left: 2vw;
+}
+}
+.orage{
+	background-image: url("../img/orage.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 57vw;
+	height: 65vh;
+}
+.pink{
+	background-image: url("../img/pink.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 6vh;
+
+}
+
+.brown{
+	background-image: url("../img/brown.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 5vh;
+
+}
+.candycorn{
+	background-image: url("../img/candycorn.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 3vw;
+	height: 6vh;
+	b 
+}
+.sucette{
+	background-image: url("../img/sucette.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 3vw;
+	height: 10vh;
+
+
+}
+.y{
+	background-image: url("../img/y.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 5vh;
+
+
+}
+.lolilpop{
+	background-image: url("../img/lolilpop.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 2vw;
+	height: 7vh;
+
+
+}
+.glace{
+	background-image: url("../img/glace.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 3vw;
+	height: 10vh;
+
+
+}
+.bat{
+	background-image: url("../img/bat.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 7vw;
+	height: 6vh;
+
+}
+.bat2{
+	background-image: url("../img/bat2.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 8vw;
+	height: 10vh;
+
+}
+.face{
+	background-image: url("../img/face.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 6vw;
+	height: 6vh;
+
+}
+
+.citrouille{
+	background-image: url("../img/citrouille.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 9vh;
+
+}
+.frog{
+	background-image: url("../img/frog.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 10vh;
+
+}
+.spider{
+	background-image: url("../img/spider.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 6vw;
+	height: 8vh;
+}
+
+.ghost{
+	background-image: url("../img/ghost.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 9vh;
+
+}
+
+.ghost2{
+	background-image: url("../img/ghost2.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 3vw;
+	height: 10vh;
+
+}
+
+.witch{
+	background-image: url("../img/witch.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 10vh;
+
+}
+
+.thunder{
+	animation:flash 0.5s;
+}
+
+.bom{
+	animation:bom 0.5s ;
+}
+div{
+	position:absolute;
+}
+
+@keyframes square{
+	0% { ;}
+	25%{transform: translateX(5vw) ;}
+	50%{transform: translateY(10vh) translateX(5vw) ;}
+	75%{transform: translateY(10vh) ;}
+	100%{transform: translateY(0vh) ;}
+}
+
+@keyframes raw{
+	0% {transform: translateX(0vw) ;}
+	25%{transform: translateX(5vw) ;}
+	50%{transform: translateY(0vh) translateX(0vw) ;}
+	75%{transform: translateY(10vh) translateX(0vw);}
+	100%{transform: translateY(0vh) translateX(0vw);}
+}
+
+@keyframes grow{
+	0% {transform: scaleY(0); opacity:0.5;}
+	50% {transform: scaleY(1);opacity:1;}
+	100% {transform: scaleY(0); opacity:0.5;}
+}
+
+@keyframes spin{
+	0%{ transform : rotate(0deg); }
+	100%{ transform : rotate(360deg); }
+}
+
+@keyframes spinreverse{
+	0%{ transform : rotate(0deg); }
+	100%{ transform : rotate(-360deg); }
+}
+
+@keyframes grow2{
+	0% {transform: scaleY(0); opacity:0.5;}
+	100% {transform: scaleY(1);opacity:1;}	
+}
+
+@keyframes bom{
+	0% {transform: scale(1);}
+	25% {transform: scale(1.5);}
+	50% {transform: scale(1);}
+	75% {transform: scale(1.5);}
+	100% {transform: scale(1);}
+}
+
+@keyframes start{
+	0% {transform: translateX(0vw) ;}
+	50%{transform: translateX(.5vw) ;}
+	100%{transform: translateX(0vw) ;}
+}
+
+@keyframes fear{
+	0% {transform:rotate(2deg);}
+	50% {transform:rotate(-2deg);}
+	100% {transform:rotate(2deg);}	
+}
+
+@keyframes flash{
+	0% {background-color: rgba(255,255,255,0.0);}
+	25%{background-color: rgba(255,255,255,0.8);}
+	50%{background-color: rgba(255,255,255,0.0);}
+	75%{background-color: rgba(255,255,255,0.8);}
+	100%{background-color: rgba(255,255,255,0.0);}
+}
+
+@keyframes shadow{
+	0%{text-shadow: -25px -16px 5px black, 3px -6px 18px white;}
+	25%{text-shadow: 25px -13px 5px black, 3px -6px 18px white;}
+	50%{text-shadow: -25px -16px 5px black, 3px -6px 18px white;}
+	75%{text-shadow: 25px -13px 5px black, 3px -6px 18px white;}
+	100%{text-shadow: -25px -16px 5px black, 3px -6px 18px white;}
+
+}
