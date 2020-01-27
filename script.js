@@ -218,35 +218,33 @@ function rcfear(e){
 		}
 	}
 
-	function rccandy(e){
-		var candy= ["candycorn", "pink","brown","y","sucette","lolilpop","glace"]
-		for(i=0; i < candy.length; i++){
-			if(candy[i] == e ){
-				return candy[i]}
-			}
+function rccandy(e){
+	var candy= ["candycorn", "pink","brown","y","sucette","lolilpop","glace"]
+	for(i=0; i < candy.length; i++){
+		if(candy[i] == e ){
+			return candy[i]}
 		}
+	}
 
+function getRandomCandy() {
+	var candy = ["candycorn", "pink", "brown", "y", "sucette", "lolilpop", "glace"]
+	return candy[getRandomInt(candy.length)]
+}
 
-		function getRandomCandy() {
-			var candy = ["candycorn", "pink", "brown", "y", "sucette", "lolilpop", "glace"]
-			return candy[getRandomInt(candy.length)]
-		}
+function getRandomFear() {
+	var fear = ["bat","bat2", "citrouille", "face", "frog","spider", "ghost", "ghost2", "witch"]
+	return fear[getRandomInt(fear.length)]
+}
 
-		function getRandomFear() {
-			var fear = ["bat","bat2", "citrouille", "face", "frog","spider", "ghost", "ghost2", "witch"]
-			return fear[getRandomInt(fear.length)]
-		}
+function getRandomAnim() {
+	var anim = ["raw", "grow", "square", "spin",]
+	return anim[getRandomInt(anim.length)]
+}
 
-		function getRandomAnim() {
-			var anim = ["raw", "grow", "square", "spin",]
-			return anim[getRandomInt(anim.length)]
-
-		}
-		function getverse() {
-			var anim = ["reverse", " "]
-			return anim[getRandomInt(anim.length)]
-
-		}
+function getverse() {
+	var anim = ["reverse", " "]
+	return anim[getRandomInt(anim.length)]
+}
 
 		function getRandomColor() {
 			var letters = '0123456789ABCDEF';

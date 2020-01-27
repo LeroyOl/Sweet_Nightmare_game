@@ -23,7 +23,7 @@ body{
 	display:block;
 	background-size: cover;
 	background-repeat: no-repeat;
-	cursor: url("../img/finger.cur"), auto;
+	cursor: url('../img/Arrow.png'), auto;
 }
 
 h1{
